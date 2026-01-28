@@ -1,0 +1,2 @@
+kubectl apply -f https://openebs.github.io/charts/openebs-operator.yaml
+kubectl patch storageclass openebs-hostpath -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
